@@ -12,7 +12,7 @@
 
 
 ## Demo
-[]!("https://github.com/BcanGRG/QuizApp/blob/main/app/src/main/res/drawable/quizapp.gif")
+[]!(https://github.com/BcanGRG/QuizApp/blob/main/app/src/main/res/drawable/quizapp.gif)
 
 
 ## Authors
