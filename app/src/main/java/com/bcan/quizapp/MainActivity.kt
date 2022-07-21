@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,8 +20,10 @@ class MainActivity : AppCompatActivity() {
             if (etName.text.isEmpty()){
                 Toast.makeText(this,"Name should be not empty",Toast.LENGTH_LONG).show()
             }else {
-                val intent = Intent(this,QuizQuestionsActivity::class.java)
+                val intent = Intent(this, QuizQuestionsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME,etName.text.toString())
                 startActivity(intent)
+                finish()
             }
         }
     }
